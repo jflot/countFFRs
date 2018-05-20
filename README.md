@@ -7,7 +7,7 @@ Usage: `perl countffrs.pl -i <input file in sequential FASTA format> -n <number 
 
 To generate .list files (to be used as inputs for the R scripts to calculate %oversplitting, %overlumping and %success):
 
-Simcoal:
+SimCoal:
 ```
 for i in `ls *fasta` ; do countffrs.pl -i $i -n 100 -s 1 -r 10 -g > $i.ffrs ; done
 for i in `ls *ffrs` ; do csplit -f $i $i 1 {10} ; done ; rm *00; rm *11 ; sed -i 's/;/\n/g' *ffrs[0-9]*
