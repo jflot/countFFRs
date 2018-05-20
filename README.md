@@ -1,7 +1,7 @@
 # countFFRs
 a perl script to simulate species delimitation using haplowebs
 
-This is perl script was used in Dellicour S, Flot J-F (2015) Delimiting species-poor datasets using single molecular markers: a study of barcode gaps, haplowebs and GMYC. Systematic Biology 64:900-908 (https://doi.org/10.1093/sysbio/syu130).
+This perl script was used in Dellicour S, Flot J-F (2015) Delimiting species-poor datasets using single molecular markers: a study of barcode gaps, haplowebs and GMYC. Systematic Biology 64:900-908 (https://doi.org/10.1093/sysbio/syu130).
 
 Usage: `perl countffrs.pl -i <input file in sequential FASTA format> -n <number of individuals to be sampled randomly from each simulated species> -s <number of simulated species`; the program will divide the aligment into s equal blocks of sequences and consider each of them as coming from a different species, meaning that the haplotypes of heterozygotes will always be drawn from the same block> -r <number of replicate samplings> -v <verbiose> -f <save test dataset as FASTA> -g <save test dataset as gzipped FASTA> -R <generate Roehl output file for Network>
 
